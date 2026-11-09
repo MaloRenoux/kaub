@@ -1,0 +1,13 @@
+{
+  "source": "Open-Meteo, prévision météo (modèles combinés), licence CC BY 4.0",
+  "extraction": "2026-11-09",
+  "note": "Cumul de pluie journalier prévu (mm), 16 jours à partir du 9 novembre 2026, en cinq points du bassin du Rhin en amont de Kaub et autour.",
+  "debut": "2026-11-09",
+  "points": {
+    "Bâle (Rhin alpin)": {"lat": 47.56, "lon": 7.59, "pluie_mm": [7.4,17.15,1.48,4,7.4,0,0,14.1,4,8.6,0.8,32.4,31,0,0.65,17.05]},
+    "Karlsruhe (Rhin supérieur)": {"lat": 49.01, "lon": 8.4, "pluie_mm": [0.2,5.1,9.5,5.8,0.2,0,0,10.7,13.2,1.8,0.8,8,7.2,0,0.45,11.25]},
+    "Francfort (bassin du Main)": {"lat": 50.11, "lon": 8.68, "pluie_mm": [0,1.8,2.73,2.7,0,0,0,7,16.2,2,3.2,4,0,0,0.35,5.95]},
+    "Trèves (bassin de la Moselle)": {"lat": 49.75, "lon": 6.64, "pluie_mm": [0,1.3,3.8,0.1,0,0,0.8,8,21.8,6,3,1.2,0,0,1.6,null]},
+    "Kaub (Rhin moyen)": {"lat": 50.09, "lon": 7.76, "pluie_mm": [0,2.2,2.3,2.9,0,0,0,7.8,10.8,3.4,3,0.8,0,0,0.08,2.78]}
+  }
+}

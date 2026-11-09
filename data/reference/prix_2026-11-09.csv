@@ -1,0 +1,9 @@
+# Instantané des prix relevés le 9 novembre 2026 vers 11 h (heure de Paris), pour les tests et la démonstration hors ligne.
+# Les prix du jour sont récupérés automatiquement par kaub/sources/prix.py ; le blé et le maïs Euronext se saisissent dans data/historique/prix_manuels.csv.
+date,produit,valeur,unite,echeance,source,url
+2026-11-09,ble_euronext,224.00,EUR/t,déc. 2026,"Euronext, blé de meunerie (EBM), dernier cours 10 h 58",https://live.euronext.com/en/product/commodities-futures/EBM-DPAR
+2026-11-09,mais_euronext,250.25,EUR/t,mars 2027,"Euronext, maïs (EMA), dernier cours 10 h 57",https://live.euronext.com/en/product/commodities-futures/EMA-DPAR
+2026-11-09,gaz_ttf,87.01,EUR/MWh,mois suivant,"Yahoo Finance, TTF=F (contrat à terme sur le gaz néerlandais TTF)",https://finance.yahoo.com/quote/TTF=F
+2026-11-09,carbone_eua,83.04,EUR/t CO2,comptant,"Yahoo Finance, CO2.L (titre adossé à des quotas carbone européens, approximation du prix du quota)",https://finance.yahoo.com/quote/CO2.L
+2026-11-09,ble_cbot,589.25,USc/boisseau,déc. 2026,"Yahoo Finance, ZW=F (blé tendre de Chicago, indicateur de secours)",https://finance.yahoo.com/quote/ZW=F
+2026-11-09,eurusd,1.1198,USD par EUR,comptant,"Yahoo Finance, EURUSD=X",https://finance.yahoo.com/quote/EURUSD=X

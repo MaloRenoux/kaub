@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.env
+.venv/
+venv/
+.pytest_cache/
+*.egg-info/
+sorties/brouillons/
+.streamlit/secrets.toml
+
+# Préparation personnelle, non publiée
+GUIDE.md

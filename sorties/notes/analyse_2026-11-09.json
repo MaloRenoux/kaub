@@ -1,0 +1,680 @@
+{
+ "date": "2026-11-09",
+ "mode": "hors ligne — données réelles du 9 novembre 2026",
+ "alerte_globale": "ROUGE",
+ "stations": {
+  "KAUB": {
+   "station": "KAUB",
+   "nom": "Kaub (Rhin moyen)",
+   "niveau_cm": 11.0,
+   "horodatage": "2026-11-09 (moyenne de la journée jusqu'à 11 h)",
+   "debit_m3s": 484.0,
+   "tendance_7j_cm_par_jour": -1.3,
+   "minimum_30j_cm": 5.0,
+   "profondeur_chenal_cm": 124.0,
+   "bateau_type": "automoteur vrac de 2 000 t",
+   "taux_chargement": 0.141,
+   "bateaux_pour_un": 7.1,
+   "multiplicateur_fret": 4.78,
+   "seuils_cm": {
+    "chargement_moitie": 84.0,
+    "fin_obligation_transport": 80.0,
+    "navigation_risquee": 40.0
+   },
+   "source": "PEGELONLINE (WSV), licence CC BY 4.0, relevé du 9/11/2026",
+   "prevision": {
+    "station": "KAUB",
+    "methode": "ensemble GloFAS corrigé (50 scénarios), recollé au niveau mesuré",
+    "source": "Open-Meteo Flood API (GloFAS, Copernicus) + courbe de tarage calée sur PEGELONLINE",
+    "nb_scenarios": 50,
+    "centiles_affiches": [
+     10,
+     50,
+     90
+    ],
+    "premier_jour": "2026-11-10",
+    "dernier_jour": "2026-12-19",
+    "jalons": [
+     {
+      "date": "2026-11-16",
+      "bas_p10_cm": 27.0,
+      "median_cm": 48.0,
+      "haut_p90_cm": 62.0
+     },
+     {
+      "date": "2026-11-23",
+      "bas_p10_cm": 27.0,
+      "median_cm": 47.0,
+      "haut_p90_cm": 91.0
+     },
+     {
+      "date": "2026-11-30",
+      "bas_p10_cm": 22.0,
+      "median_cm": 54.0,
+      "haut_p90_cm": 85.0
+     },
+     {
+      "date": "2026-12-07",
+      "bas_p10_cm": 29.0,
+      "median_cm": 63.0,
+      "haut_p90_cm": 102.0
+     },
+     {
+      "date": "2026-12-14",
+      "bas_p10_cm": 6.0,
+      "median_cm": 53.0,
+      "haut_p90_cm": 105.0
+     }
+    ],
+    "proba_chargement_sous_moitie_7j_dans_3_semaines": 1.0,
+    "proba_sous_navigation_risquee_7j_dans_3_semaines": 0.46,
+    "proba_au_dessus_moitie_dans_2_semaines": 0.14
+   }
+  },
+  "DUISBURG-RUHRORT": {
+   "station": "DUISBURG-RUHRORT",
+   "nom": "Duisburg-Ruhrort (Rhin inférieur)",
+   "niveau_cm": 146.9,
+   "horodatage": "2026-11-09 (moyenne de la journée jusqu'à 11 h)",
+   "debit_m3s": 646.0,
+   "tendance_7j_cm_par_jour": -2.7,
+   "minimum_30j_cm": 135.0,
+   "profondeur_chenal_cm": 200.0,
+   "bateau_type": "automoteur vrac de 2 000 t",
+   "taux_chargement": 0.512,
+   "bateaux_pour_un": 2.0,
+   "multiplicateur_fret": 1.71,
+   "seuils_cm": {
+    "chargement_moitie": 144.0,
+    "fin_obligation_transport": 180.0,
+    "navigation_risquee": 120.0
+   },
+   "source": "PEGELONLINE (WSV), licence CC BY 4.0, relevé du 9/11/2026",
+   "prevision": {
+    "station": "DUISBURG-RUHRORT",
+    "methode": "ensemble GloFAS corrigé (50 scénarios), recollé au niveau mesuré",
+    "source": "Open-Meteo Flood API (GloFAS, Copernicus) + courbe de tarage calée sur PEGELONLINE",
+    "nb_scenarios": 50,
+    "centiles_affiches": [
+     10,
+     50,
+     90
+    ],
+    "premier_jour": "2026-11-10",
+    "dernier_jour": "2026-12-19",
+    "jalons": [
+     {
+      "date": "2026-11-16",
+      "bas_p10_cm": 168.0,
+      "median_cm": 194.0,
+      "haut_p90_cm": 212.0
+     },
+     {
+      "date": "2026-11-23",
+      "bas_p10_cm": 165.0,
+      "median_cm": 209.0,
+      "haut_p90_cm": 276.0
+     },
+     {
+      "date": "2026-11-30",
+      "bas_p10_cm": 161.0,
+      "median_cm": 220.0,
+      "haut_p90_cm": 267.0
+     },
+     {
+      "date": "2026-12-07",
+      "bas_p10_cm": 174.0,
+      "median_cm": 225.0,
+      "haut_p90_cm": 290.0
+     },
+     {
+      "date": "2026-12-14",
+      "bas_p10_cm": 140.0,
+      "median_cm": 216.0,
+      "haut_p90_cm": 293.0
+     }
+    ],
+    "proba_chargement_sous_moitie_7j_dans_3_semaines": 0.0,
+    "proba_sous_navigation_risquee_7j_dans_3_semaines": 0.0,
+    "proba_au_dessus_moitie_dans_2_semaines": 1.0
+   }
+  }
+ },
+ "prix": {
+  "ble_euronext": {
+   "produit": "ble_euronext",
+   "valeur": 224.0,
+   "unite": "EUR/t",
+   "date": "2026-11-09",
+   "source": "Euronext, blé de meunerie (EBM), dernier cours 10 h 58",
+   "approximation": false
+  },
+  "mais_euronext": {
+   "produit": "mais_euronext",
+   "valeur": 250.25,
+   "unite": "EUR/t",
+   "date": "2026-11-09",
+   "source": "Euronext, maïs (EMA), dernier cours 10 h 57",
+   "approximation": false
+  },
+  "gaz_ttf": {
+   "produit": "gaz_ttf",
+   "valeur": 87.01,
+   "unite": "EUR/MWh",
+   "date": "2026-11-09",
+   "source": "Yahoo Finance, TTF=F (contrat à terme sur le gaz néerlandais TTF)",
+   "approximation": false
+  },
+  "carbone_eua": {
+   "produit": "carbone_eua",
+   "valeur": 83.04,
+   "unite": "EUR/t CO2",
+   "date": "2026-11-09",
+   "source": "Yahoo Finance, CO2.L (titre adossé à des quotas carbone européens, approximation du prix du quota)",
+   "approximation": true
+  },
+  "ble_cbot": {
+   "produit": "ble_cbot",
+   "valeur": 589.25,
+   "unite": "USc/boisseau",
+   "date": "2026-11-09",
+   "source": "Yahoo Finance, ZW=F (blé tendre de Chicago, indicateur de secours)",
+   "approximation": false
+  },
+  "eurusd": {
+   "produit": "eurusd",
+   "valeur": 1.1198,
+   "unite": "USD par EUR",
+   "date": "2026-11-09",
+   "source": "Yahoo Finance, EURUSD=X",
+   "approximation": false
+  }
+ },
+ "pluie": {
+  "cumul_7j_mm": {
+   "Bâle (Rhin alpin)": 37.0,
+   "Karlsruhe (Rhin supérieur)": 21.0,
+   "Francfort (bassin du Main)": 7.0,
+   "Trèves (bassin de la Moselle)": 6.0,
+   "Kaub (Rhin moyen)": 7.0
+  },
+  "cumul_14j_mm": {
+   "Bâle (Rhin alpin)": 128.0,
+   "Karlsruhe (Rhin supérieur)": 62.0,
+   "Francfort (bassin du Main)": 40.0,
+   "Trèves (bassin de la Moselle)": 46.0,
+   "Kaub (Rhin moyen)": 33.0
+  },
+  "source": "Open-Meteo, prévision météo"
+ },
+ "usines": {
+  "A": {
+   "usine": "A",
+   "nom": "Usine A — bord du Rhin inférieur",
+   "station_reference": "KAUB",
+   "consommation_t_jour": 1000.0,
+   "niveau_alerte": "ROUGE",
+   "raisons_alerte": [
+    "rupture d'approvisionnement dans 100 % des scénarios sans action",
+    "péniches chargées à moins de 50 % pendant au moins 7 jours dans 100 % des scénarios"
+   ],
+   "cout_rendu": {
+    "usine": "A",
+    "prix_ble_eur_t": 224.0,
+    "base_regionale_eur_t": 0.0,
+    "manutention_eur_t": 3.0,
+    "modes": {
+     "peniche": {
+      "disponible": true,
+      "station": "KAUB",
+      "niveau_cm": 11.0,
+      "profondeur_chenal_cm": 124.0,
+      "taux_chargement": 0.141,
+      "bateaux_pour_un": 7.1,
+      "multiplicateur_fret": 4.78,
+      "fret_base_eur_t": 9.0,
+      "fret_eur_t": 43.03,
+      "raison": null,
+      "cout_rendu_eur_t": 270.03
+     },
+     "rail": {
+      "fret_eur_t": 21.0,
+      "fret_supplementaire_eur_t": 24.15,
+      "cout_rendu_eur_t": 248.0,
+      "cout_rendu_supplementaire_eur_t": 251.15
+     },
+     "camion": {
+      "fret_eur_t": 13.2,
+      "cout_rendu_eur_t": 240.2,
+      "fret_appoint_eur_t": 33.0,
+      "cout_rendu_appoint_eur_t": 260.0
+     }
+    }
+   },
+   "marge": {
+    "usine": "A",
+    "valeur_produits_eur_t": 380.0,
+    "ble_rendu_eur_t": 263.03,
+    "dont_fret_moyen_eur_t": 36.03,
+    "gaz_eur_t": 78.31,
+    "carbone_eur_t": 3.77,
+    "marge_eur_t": 34.89,
+    "marge_eur_jour": 34887.0
+   },
+   "sensibilites": {
+    "base": {
+     "usine": "A",
+     "valeur_produits_eur_t": 380.0,
+     "ble_rendu_eur_t": 263.03,
+     "dont_fret_moyen_eur_t": 36.03,
+     "gaz_eur_t": 78.31,
+     "carbone_eur_t": 3.77,
+     "marge_eur_t": 34.89,
+     "marge_eur_jour": 34887.0
+    },
+    "gaz_plus_20pct": {
+     "marge_eur_t": 19.23,
+     "ecart_eur_t": -15.66,
+     "ecart_eur_jour": -15660.0
+    },
+    "ble_plus_10eur": {
+     "marge_eur_t": 24.89,
+     "ecart_eur_t": -10.0,
+     "ecart_eur_jour": -10000.0
+    },
+    "rhin_a_-9cm": {
+     "marge_eur_t": 27.21,
+     "ecart_eur_t": -7.68,
+     "ecart_eur_jour": -7680.0
+    },
+    "combine": {
+     "marge_eur_t": 11.55,
+     "ecart_eur_t": -23.34,
+     "ecart_eur_jour": -23340.0
+    }
+   },
+   "autonomie": {
+    "usine": "A",
+    "stock_t": 12000.0,
+    "stock_jours_consommation": 12.0,
+    "arrivees_possibles_t_jour": 429.0,
+    "deficit_t_jour": 571.0,
+    "autonomie_jours": 15.8
+   },
+   "options": [
+    {
+     "option": "Rail et camions d'appoint",
+     "description": "Bascule sur le rail, complétée par des camions tant que le rail n'est pas en place.",
+     "cout_moyen_eur": 917666.0,
+     "cout_p90_eur": 1022389.0,
+     "transport_moyen_eur_t": 25.3,
+     "proba_rupture": 0.0,
+     "rupture_moyenne_t": 0.0,
+     "stock_min_jours_median": 7.0,
+     "nb_scenarios": 50,
+     "ecart_vs_statu_quo_eur": -310124.0,
+     "sans_effet": false
+    },
+    {
+     "option": "Camions d'appoint",
+     "description": "Appeler jusqu'à 400 t/jour de camions (33 €/t de fret) dès que le stock passe sous sa cible (délai 2 jours).",
+     "cout_moyen_eur": 944639.0,
+     "cout_p90_eur": 1005731.0,
+     "transport_moyen_eur_t": 27.0,
+     "proba_rupture": 0.1,
+     "rupture_moyenne_t": 42.0,
+     "stock_min_jours_median": 6.3,
+     "nb_scenarios": 50,
+     "ecart_vs_statu_quo_eur": -283151.0,
+     "sans_effet": false
+    },
+    {
+     "option": "Basculer 30 % des volumes sur le rail",
+     "description": "Transférer 30 % de la consommation de la péniche vers le rail, effectif après 7 jours.",
+     "cout_moyen_eur": 875994.0,
+     "cout_p90_eur": 952051.0,
+     "transport_moyen_eur_t": 24.7,
+     "proba_rupture": 0.14,
+     "rupture_moyenne_t": 320.0,
+     "stock_min_jours_median": 5.6,
+     "nb_scenarios": 50,
+     "ecart_vs_statu_quo_eur": -351796.0,
+     "sans_effet": false
+    },
+    {
+     "option": "Avancer les péniches et basculer sur le rail",
+     "description": "Combinaison des deux options précédentes.",
+     "cout_moyen_eur": 876034.0,
+     "cout_p90_eur": 952051.0,
+     "transport_moyen_eur_t": 24.7,
+     "proba_rupture": 0.14,
+     "rupture_moyenne_t": 320.0,
+     "stock_min_jours_median": 5.6,
+     "nb_scenarios": 50,
+     "ecart_vs_statu_quo_eur": -351756.0,
+     "sans_effet": false
+    },
+    {
+     "option": "Ne rien changer",
+     "description": "On garde le plan d'approvisionnement actuel.",
+     "cout_moyen_eur": 1227790.0,
+     "cout_p90_eur": 1618542.0,
+     "transport_moyen_eur_t": 23.4,
+     "proba_rupture": 1.0,
+     "rupture_moyenne_t": 6788.0,
+     "stock_min_jours_median": 3.0,
+     "nb_scenarios": 50,
+     "ecart_vs_statu_quo_eur": 0.0,
+     "sans_effet": false
+    },
+    {
+     "option": "Avancer des livraisons fluviales",
+     "description": "Affréter des péniches en plus pendant 10 jours (jusqu'à 210 t/jour) tant qu'elles chargent encore.",
+     "cout_moyen_eur": 1227790.0,
+     "cout_p90_eur": 1618542.0,
+     "transport_moyen_eur_t": 23.4,
+     "proba_rupture": 1.0,
+     "rupture_moyenne_t": 6788.0,
+     "stock_min_jours_median": 3.0,
+     "nb_scenarios": 50,
+     "ecart_vs_statu_quo_eur": 0.0,
+     "sans_effet": true
+    }
+   ],
+   "recommandation": {
+    "option": "Rail et camions d'appoint",
+    "gain_moyen_vs_statu_quo_eur": 310124.0,
+    "proba_rupture_avant": 1.0,
+    "proba_rupture_apres": 0.0,
+    "a_valider_par": "le responsable logistique"
+   }
+  },
+  "B": {
+   "usine": "B",
+   "nom": "Usine B — Benelux",
+   "station_reference": "DUISBURG-RUHRORT",
+   "consommation_t_jour": 700.0,
+   "niveau_alerte": "VERT",
+   "raisons_alerte": [
+    "approvisionnement sécurisé dans tous les scénarios"
+   ],
+   "cout_rendu": {
+    "usine": "B",
+    "prix_ble_eur_t": 224.0,
+    "base_regionale_eur_t": 0.0,
+    "manutention_eur_t": 3.0,
+    "modes": {
+     "peniche": {
+      "disponible": true,
+      "station": "DUISBURG-RUHRORT",
+      "niveau_cm": 146.9,
+      "profondeur_chenal_cm": 199.9,
+      "taux_chargement": 0.512,
+      "bateaux_pour_un": 2.0,
+      "multiplicateur_fret": 1.71,
+      "fret_base_eur_t": 7.5,
+      "fret_eur_t": 12.82,
+      "raison": null,
+      "cout_rendu_eur_t": 239.82
+     },
+     "rail": {
+      "fret_eur_t": 19.0,
+      "fret_supplementaire_eur_t": 21.85,
+      "cout_rendu_eur_t": 246.0,
+      "cout_rendu_supplementaire_eur_t": 248.85
+     },
+     "camion": {
+      "fret_eur_t": 16.5,
+      "cout_rendu_eur_t": 243.5,
+      "fret_appoint_eur_t": 27.5,
+      "cout_rendu_appoint_eur_t": 254.5
+     }
+    }
+   },
+   "marge": {
+    "usine": "B",
+    "valeur_produits_eur_t": 380.0,
+    "ble_rendu_eur_t": 241.29,
+    "dont_fret_moyen_eur_t": 14.29,
+    "gaz_eur_t": 78.31,
+    "carbone_eur_t": 3.77,
+    "marge_eur_t": 56.63,
+    "marge_eur_jour": 39639.0
+   },
+   "sensibilites": {
+    "base": {
+     "usine": "B",
+     "valeur_produits_eur_t": 380.0,
+     "ble_rendu_eur_t": 241.29,
+     "dont_fret_moyen_eur_t": 14.29,
+     "gaz_eur_t": 78.31,
+     "carbone_eur_t": 3.77,
+     "marge_eur_t": 56.63,
+     "marge_eur_jour": 39639.0
+    },
+    "gaz_plus_20pct": {
+     "marge_eur_t": 40.97,
+     "ecart_eur_t": -15.66,
+     "ecart_eur_jour": -10962.0
+    },
+    "ble_plus_10eur": {
+     "marge_eur_t": 46.63,
+     "ecart_eur_t": -10.0,
+     "ecart_eur_jour": -7000.0
+    },
+    "rhin_a_126cm": {
+     "marge_eur_t": 55.21,
+     "ecart_eur_t": -1.42,
+     "ecart_eur_jour": -994.0
+    },
+    "combine": {
+     "marge_eur_t": 39.55,
+     "ecart_eur_t": -17.08,
+     "ecart_eur_jour": -11956.0
+    }
+   },
+   "autonomie": {
+    "usine": "B",
+    "stock_t": 7000.0,
+    "stock_jours_consommation": 10.0,
+    "arrivees_possibles_t_jour": 559.0,
+    "deficit_t_jour": 141.0,
+    "autonomie_jours": 34.8
+   },
+   "options": [
+    {
+     "option": "Ne rien changer",
+     "description": "On garde le plan d'approvisionnement actuel.",
+     "cout_moyen_eur": 424691.0,
+     "cout_p90_eur": 430773.0,
+     "transport_moyen_eur_t": 15.4,
+     "proba_rupture": 0.02,
+     "rupture_moyenne_t": 0.0,
+     "stock_min_jours_median": 8.2,
+     "nb_scenarios": 50,
+     "ecart_vs_statu_quo_eur": 0.0,
+     "sans_effet": false
+    },
+    {
+     "option": "Avancer des livraisons fluviales",
+     "description": "Affréter des péniches en plus pendant 10 jours (jusqu'à 126 t/jour) tant qu'elles chargent encore.",
+     "cout_moyen_eur": 425867.0,
+     "cout_p90_eur": 431472.0,
+     "transport_moyen_eur_t": 15.4,
+     "proba_rupture": 0.02,
+     "rupture_moyenne_t": 0.0,
+     "stock_min_jours_median": 8.3,
+     "nb_scenarios": 50,
+     "ecart_vs_statu_quo_eur": 1176.0,
+     "sans_effet": false
+    },
+    {
+     "option": "Camions d'appoint",
+     "description": "Appeler jusqu'à 400 t/jour de camions (28 €/t de fret) dès que le stock passe sous sa cible (délai 2 jours).",
+     "cout_moyen_eur": 435629.0,
+     "cout_p90_eur": 475942.0,
+     "transport_moyen_eur_t": 15.6,
+     "proba_rupture": 0.0,
+     "rupture_moyenne_t": 0.0,
+     "stock_min_jours_median": 8.2,
+     "nb_scenarios": 50,
+     "ecart_vs_statu_quo_eur": 10937.0,
+     "sans_effet": false
+    },
+    {
+     "option": "Basculer 30 % des volumes sur le rail",
+     "description": "Transférer 30 % de la consommation de la péniche vers le rail, effectif après 7 jours.",
+     "cout_moyen_eur": 529206.0,
+     "cout_p90_eur": 543858.0,
+     "transport_moyen_eur_t": 18.6,
+     "proba_rupture": 0.0,
+     "rupture_moyenne_t": 0.0,
+     "stock_min_jours_median": 9.0,
+     "nb_scenarios": 50,
+     "ecart_vs_statu_quo_eur": 104515.0,
+     "sans_effet": false
+    },
+    {
+     "option": "Avancer les péniches et basculer sur le rail",
+     "description": "Combinaison des deux options précédentes.",
+     "cout_moyen_eur": 535159.0,
+     "cout_p90_eur": 549908.0,
+     "transport_moyen_eur_t": 18.5,
+     "proba_rupture": 0.0,
+     "rupture_moyenne_t": 0.0,
+     "stock_min_jours_median": 9.0,
+     "nb_scenarios": 50,
+     "ecart_vs_statu_quo_eur": 110467.0,
+     "sans_effet": false
+    },
+    {
+     "option": "Rail et camions d'appoint",
+     "description": "Bascule sur le rail, complétée par des camions tant que le rail n'est pas en place.",
+     "cout_moyen_eur": 529206.0,
+     "cout_p90_eur": 543858.0,
+     "transport_moyen_eur_t": 18.6,
+     "proba_rupture": 0.0,
+     "rupture_moyenne_t": 0.0,
+     "stock_min_jours_median": 9.0,
+     "nb_scenarios": 50,
+     "ecart_vs_statu_quo_eur": 104515.0,
+     "sans_effet": true
+    }
+   ],
+   "recommandation": {
+    "option": "Ne rien changer",
+    "gain_moyen_vs_statu_quo_eur": -0.0,
+    "proba_rupture_avant": 0.02,
+    "proba_rupture_apres": 0.02,
+    "a_valider_par": "le responsable logistique"
+   }
+  },
+  "C": {
+   "usine": "C",
+   "nom": "Usine C — desservie par le rail et la route",
+   "station_reference": null,
+   "consommation_t_jour": 500.0,
+   "niveau_alerte": "VERT",
+   "raisons_alerte": [
+    "approvisionnement sécurisé dans tous les scénarios"
+   ],
+   "cout_rendu": {
+    "usine": "C",
+    "prix_ble_eur_t": 224.0,
+    "base_regionale_eur_t": 0.0,
+    "manutention_eur_t": 3.0,
+    "modes": {
+     "rail": {
+      "fret_eur_t": 19.0,
+      "fret_supplementaire_eur_t": 21.85,
+      "cout_rendu_eur_t": 246.0,
+      "cout_rendu_supplementaire_eur_t": 248.85
+     },
+     "camion": {
+      "fret_eur_t": 9.9,
+      "cout_rendu_eur_t": 236.9,
+      "fret_appoint_eur_t": 9.9,
+      "cout_rendu_appoint_eur_t": 236.9
+     }
+    }
+   },
+   "marge": {
+    "usine": "C",
+    "valeur_produits_eur_t": 380.0,
+    "ble_rendu_eur_t": 243.27,
+    "dont_fret_moyen_eur_t": 16.27,
+    "gaz_eur_t": 78.31,
+    "carbone_eur_t": 3.77,
+    "marge_eur_t": 54.65,
+    "marge_eur_jour": 27323.0
+   },
+   "sensibilites": {
+    "base": {
+     "usine": "C",
+     "valeur_produits_eur_t": 380.0,
+     "ble_rendu_eur_t": 243.27,
+     "dont_fret_moyen_eur_t": 16.27,
+     "gaz_eur_t": 78.31,
+     "carbone_eur_t": 3.77,
+     "marge_eur_t": 54.65,
+     "marge_eur_jour": 27323.0
+    },
+    "gaz_plus_20pct": {
+     "marge_eur_t": 38.99,
+     "ecart_eur_t": -15.66,
+     "ecart_eur_jour": -7830.0
+    },
+    "ble_plus_10eur": {
+     "marge_eur_t": 44.65,
+     "ecart_eur_t": -10.0,
+     "ecart_eur_jour": -5000.0
+    }
+   },
+   "autonomie": {
+    "usine": "C",
+    "stock_t": 4000.0,
+    "stock_jours_consommation": 8.0,
+    "arrivees_possibles_t_jour": 500.0,
+    "deficit_t_jour": 0.0,
+    "autonomie_jours": null
+   },
+   "options": [
+    {
+     "option": "Ne rien changer",
+     "description": "On garde le plan d'approvisionnement actuel.",
+     "cout_moyen_eur": 419070.0,
+     "cout_p90_eur": 419070.0,
+     "transport_moyen_eur_t": 19.3,
+     "proba_rupture": 0.0,
+     "rupture_moyenne_t": 0.0,
+     "stock_min_jours_median": 8.0,
+     "nb_scenarios": 1,
+     "ecart_vs_statu_quo_eur": 0.0,
+     "sans_effet": false
+    },
+    {
+     "option": "Camions d'appoint",
+     "description": "Appeler jusqu'à 400 t/jour de camions (10 €/t de fret) dès que le stock passe sous sa cible (délai 2 jours).",
+     "cout_moyen_eur": 419070.0,
+     "cout_p90_eur": 419070.0,
+     "transport_moyen_eur_t": 19.3,
+     "proba_rupture": 0.0,
+     "rupture_moyenne_t": 0.0,
+     "stock_min_jours_median": 8.0,
+     "nb_scenarios": 1,
+     "ecart_vs_statu_quo_eur": 0.0,
+     "sans_effet": true
+    }
+   ],
+   "recommandation": {
+    "option": "Ne rien changer",
+    "gain_moyen_vs_statu_quo_eur": -0.0,
+    "proba_rupture_avant": 0.0,
+    "proba_rupture_apres": 0.0,
+    "a_valider_par": "le responsable logistique"
+   }
+  }
+ },
+ "avertissements": [],
+ "hypotheses": "config/hypotheses.yaml — réseau d'usines fictif, aucune donnée interne d'entreprise"
+}

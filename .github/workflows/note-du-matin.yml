@@ -1,0 +1,35 @@
+# Rédige la note du matin chaque jour ouvré à 6 h 47 (heure de Paris en hiver) et l'ajoute au dépôt.
+# Si le secret ANTHROPIC_API_KEY est défini (Settings > Secrets and variables > Actions), la note est
+# rédigée par Claude ; sinon, par le gabarit (mêmes chiffres).
+name: Note du matin
+
+on:
+  schedule:
+    - cron: "47 5 * * 1-5"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  note:
+    runs-on: ubuntu-latest
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -e .
+      - name: Rédiger la note
+        run: |
+          if [ -n "$ANTHROPIC_API_KEY" ]; then python -m kaub note --ia; else python -m kaub note; fi
+      - name: Enregistrer la note
+        run: |
+          git config user.name "kaub-note"
+          git config user.email "kaub-note@users.noreply.github.com"
+          git add sorties/notes data/historique data/journal
+          git diff --cached --quiet || git commit -m "Note du matin du $(date -u '+%Y-%m-%d')"
+          git push

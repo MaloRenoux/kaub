@@ -1,0 +1,19 @@
+# Relevés du niveau de Kaub publiés dans la presse pendant les basses eaux de 2026.
+# Servent à contrôler (et, si besoin, à ancrer) la série reconstituée de l'été 2026, car l'interface publique PEGELONLINE ne garde qu'environ un mois d'historique.
+# fiabilite : "exacte" = date et heure données ; "deduite" = date déduite du jour de la semaine cité ; "approx" = date vague, à ne pas utiliser pour l'ancrage.
+date,station,niveau_cm,fiabilite,precision,source,url
+2026-07-24,KAUB,55,deduite,"« vendredi matin », article du 29/07",VerkehrsRundschau 29/07/2026,https://www.verkehrsrundschau.de/nachrichten/transport-logistik/niedrigwasser-am-rhein-beeintraechtigt-die-schifffahrt-3883719
+2026-07-29,KAUB,27,exacte,"valeur « actuelle » le jour de l'article",VerkehrsRundschau 29/07/2026,https://www.verkehrsrundschau.de/nachrichten/transport-logistik/niedrigwasser-am-rhein-beeintraechtigt-die-schifffahrt-3883719
+2026-07-31,KAUB,25,exacte,"vendredi, article du 01/08",ZDFheute 01/08/2026,https://www.zdfheute.de/panorama/niedrigwasser-rhein-trockenheit-100.html
+2026-08-01,KAUB,30,exacte,"samedi midi",ZDFheute 01/08/2026,https://www.zdfheute.de/panorama/niedrigwasser-rhein-trockenheit-100.html
+2026-08-04,KAUB,24,exacte,"nouveau record, jour de l'article",VerkehrsRundschau 04/08/2026,https://www.verkehrsrundschau.de/nachrichten/transport-logistik/rhein-niedrigwasser-rekordtiefstaende-belasten-schifffahrt-3886456
+2026-08-10,KAUB,17,exacte,"mesure de 5 h 00",Transport Online 11/08/2026,https://transport-online.de/news/binnenschifffahrt-pegel-kaub-faellt-auf-17-zentimeter-192074.html
+2026-08-14,KAUB,8,exacte,"vendredi matin, donnée brute",VerkehrsRundschau 14/08/2026,https://www.verkehrsrundschau.de/nachrichten/transport-logistik/rhein-niedrigwasser-pegel-kaub-erreicht-historischen-tiefstand-3891008
+2026-08-15,KAUB,6,approx,"« mi-août », minimum de l'été",Stuttgarter Zeitung 03/09/2026,https://www.stuttgarter-zeitung.de/wirtschaft/niedrigwasser-keine-entwarnung-sinkende-pegelstaende-erwartet-79436187.html
+2026-08-31,KAUB,73,deduite,"« en début de semaine », article du 03/09",Stuttgarter Zeitung 03/09/2026,https://www.stuttgarter-zeitung.de/wirtschaft/niedrigwasser-keine-entwarnung-sinkende-pegelstaende-erwartet-79436187.html
+2026-09-02,KAUB,59,deduite,"« mercredi », article du 03/09",Stuttgarter Zeitung 03/09/2026,https://www.stuttgarter-zeitung.de/wirtschaft/niedrigwasser-keine-entwarnung-sinkende-pegelstaende-erwartet-79436187.html
+2026-09-19,KAUB,22,exacte,"samedi midi, environ 22 cm",wetter.net 19/09/2026,https://www.wetter.net/wetter-news/rhein-niedrigwasser-bei-kaub-frachter-laden-nur-teilmengen
+2026-09-27,KAUB,-2,deduite,"« le week-end dernier », article du 30/09",Heidelberg24 30/09/2026,https://www.heidelberg24.de/politik-und-wirtschaft/rhein-pegel-auf-historischem-tief-hat-folgen-fuer-die-wirtschaft-zr-94517651.html
+2026-10-01,KAUB,-6,exacte,"record absolu",Transport Online 02/10/2026,https://transport-online.de/news/rhein-auf-rekordtief-binnenschifffahrt-verteilt-ladung-auf-mehr-schiffe-193878.html
+2026-10-30,KAUB,44,exacte,"contrôle : recoupe la mesure officielle",wetter.net 02/11/2026,https://www.wetter.net/wetter-news/niedrigwasser-am-rhein-kaub-faellt-auf-21-cm-kein-regen-in-sicht
+2026-11-02,KAUB,21,exacte,"15 h 00, contrôle : recoupe la mesure officielle",wetter.net 02/11/2026,https://www.wetter.net/wetter-news/niedrigwasser-am-rhein-kaub-faellt-auf-21-cm-kein-regen-in-sicht

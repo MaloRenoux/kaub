@@ -1,0 +1,5 @@
+# Prix saisis à la main (une ligne par jour et par produit), lus sur les pages publiques d'Euronext (cours différés).
+# Blé de meunerie : https://live.euronext.com/en/product/commodities-futures/EBM-DPAR — Maïs : .../EMA-DPAR
+date,produit,valeur,unite,echeance,source,url
+2026-11-09,ble_euronext,224.00,EUR/t,déc. 2026,"Euronext, blé de meunerie (EBM), dernier cours 10 h 58",https://live.euronext.com/en/product/commodities-futures/EBM-DPAR
+2026-11-09,mais_euronext,250.25,EUR/t,mars 2027,"Euronext, maïs (EMA), dernier cours 10 h 57",https://live.euronext.com/en/product/commodities-futures/EMA-DPAR

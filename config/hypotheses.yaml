@@ -1,0 +1,142 @@
+# =====================================================================================
+# KAUB — toutes les hypothèses du modèle, en un seul fichier
+# =====================================================================================
+# Règle : chaque valeur indique sa source. « hypothèse » = valeur choisie faute de donnée
+# publique, à faire valider par un professionnel. Le réseau d'usines est FICTIF : aucune
+# donnée interne d'une entreprise n'est utilisée.
+#
+# Sigles utilisés dans ce fichier :
+#   GlW   = Gleichwertiger Wasserstand, « niveau d'eau équivalent » : niveau d'étiage de référence
+#           de chaque station, publié par l'administration allemande des voies navigables (WSV).
+#   TuGlW = Tiefe unter GlW, profondeur garantie du chenal de navigation quand l'eau est au GlW.
+#   WSV   = Wasserstraßen- und Schifffahrtsverwaltung des Bundes, administration fédérale
+#           allemande des voies navigables, qui publie PEGELONLINE.
+#   GloFAS = Global Flood Awareness System, modèle hydrologique du programme européen Copernicus.
+#   EUA   = European Union Allowance, quota d'émission de CO2 du marché carbone européen.
+#   TTF   = Title Transfer Facility, le marché de référence du gaz naturel en Europe (Pays-Bas).
+# =====================================================================================
+
+stations:
+  KAUB:
+    nom: "Kaub (Rhin moyen)"
+    pegelonline: "KAUB"
+    glw_cm: 77                     # PEGELONLINE, valeurs caractéristiques, valable depuis 2023
+    tuglw_cm: 190                  # PEGELONLINE (TuGlW), valable depuis 2004
+    seuil_fin_obligation_transport_cm: 80   # Contargo, brochure basses eaux (2017)
+    seuil_navigation_risquee_cm: 40         # Contargo : en dessous, la navigation n'a presque plus de sens
+    debit_plancher_m3s: 380        # hypothèse : débit de base minimal (record 2026 ≈ 420 m3/s, soit −6 cm), sert à la prévision de tarissement
+    glofas: {latitude: 50.125, longitude: 7.675}   # maille GloFAS sur le Rhin la plus proche de Kaub
+    tarage:                        # calée le 9/11/2026 (kaub calibrer) sur 30 jours PEGELONLINE + annuaire BfG
+      W0: -192.0713
+      c: 0.0692892
+      n: 1.666099
+      erreur_m3s: 0.95
+      source: "PEGELONLINE (couples W/Q, 10 oct.–8 nov. 2026) + annuaire hydrologique BfG 2025 (NW 79 cm / NQ 784 m3/s ; HW 498 cm / HQ 3 720 m3/s)"
+    correction_glofas: {decalage_jours: -1, fenetre_jours: 21, coef_base: 0.87902, coef_rapide: 0.30696, erreur_m3s: 20.6}
+
+  DUISBURG-RUHRORT:
+    nom: "Duisburg-Ruhrort (Rhin inférieur)"
+    pegelonline: "DUISBURG-RUHRORT"
+    glw_cm: 227
+    tuglw_cm: 280
+    seuil_fin_obligation_transport_cm: 180  # Contargo
+    seuil_navigation_risquee_cm: 120        # hypothèse : même écart au GlW qu'à Kaub (environ −100 cm)
+    debit_plancher_m3s: 450        # hypothèse
+    glofas: {latitude: 51.475, longitude: 6.675}
+    tarage:
+      W0: -148.5257
+      c: 0.01540537
+      n: 1.871124
+      erreur_m3s: 0.22
+      source: "PEGELONLINE (couples W/Q, 10 oct.–8 nov. 2026) ; extrapolation hors 135–245 cm moins sûre"
+    correction_glofas: {decalage_jours: -1, fenetre_jours: 21, coef_base: 0.94530, coef_rapide: 0.42549, erreur_m3s: 34.4}
+
+# Bateau type pour le vrac céréalier sur le Rhin (hypothèse : automoteur de 2 000 t, gabarit courant).
+# Contrôles (voir README) : à 8 cm, chenal de 121 cm (le service des voies navigables annonçait « un peu plus
+# de 1,20 m » le 14/08/2026) ; à 150 cm, le bateau charge 82 % (presse : « la plupart des bateaux chargent à
+# plein vers 150 cm ») ; à 25 cm, 21 % (presse : « un tiers à la moitié ») ; à −6 cm, 6 % (un affréteur a
+# utilisé 14 bateaux au lieu de 3, soit 21 % : le modèle est prudent quand l'eau est extrêmement basse).
+bateau:
+  nom: "automoteur vrac de 2 000 t"
+  port_en_lourd_t: 2000            # hypothèse
+  tirant_eau_max_cm: 280           # hypothèse
+  tirant_eau_lege_cm: 75           # hypothèse : enfoncement du bateau vide
+  pied_de_pilote_cm: 20            # Contargo : marge de sécurité sous la quille
+
+# Comment le prix du fret réagit quand les bateaux chargent moins.
+marche_fret:
+  # multiplicateur du fret = (taux de chargement) ^ (−élasticité)
+  # Calée pour reproduire le constat de la presse : fret « multiplié par 3 à 4 » quand Kaub était
+  # vers 25 cm (VerkehrsRundschau, 4 août 2026) : avec 0,8, le modèle donne × 3,5 à 25 cm.
+  # Lecture : taux de chargement divisé par 2 → fret multiplié par 2^0,8 ≈ 1,74.
+  elasticite: 0.8
+  multiplicateur_max: 6.0          # hypothèse : au-delà, le marché ne cote plus, les bateaux restent à quai
+  taux_chargement_min_navigation: 0.05   # hypothèse : en dessous de 5 %, on considère la voie d'eau fermée
+  flotte_flexible: 1.3             # hypothèse : on peut affréter jusqu'à 30 % de bateaux en plus du plan
+
+# Coûts logistiques de base (hors basses eaux), en €/t — hypothèses à faire valider.
+couts:
+  manutention_eur_t: 3.0           # hypothèse : déchargement et mise en silo
+  stockage_eur_t_semaine: 0.6      # hypothèse : coût de portage d'une tonne en silo
+  rail_surcout_crise: 0.15         # hypothèse : +15 % sur le rail quand tout le monde s'y reporte
+  camion_eur_t_km: 0.11            # hypothèse
+  camion_max_t_jour: 400           # hypothèse : capacité de camions affrétables en urgence
+  camion_delai_jours: 2            # hypothèse
+  rail_delai_jours: 7              # hypothèse : délai pour obtenir des sillons et des wagons
+  rail_part_max_supplementaire: 0.30   # hypothèse : on peut basculer au plus 30 % des volumes
+  penalite_rupture_eur_t: 60.0     # hypothèse : pénalités clients et redémarrage, en plus de la marge perdue
+
+# Énergie et carbone.
+energie:
+  gaz_mwh_par_t_ble: 0.9           # hypothèse, à affiner (Starch Europe : l'énergie ≈ 15 % des coûts d'exploitation)
+  facteur_emission_t_co2_par_mwh: 0.202   # GIEC 2006, gaz naturel (56,1 t CO2 par térajoule)
+  part_quotas_gratuits: 0.75       # hypothèse ; Starch Europe (fév. 2026) chiffre l'effet d'une fin des quotas gratuits
+
+# Valeur des produits tirés d'une tonne de blé (amidon, gluten, coproduits).
+produits:
+  valeur_eur_par_t_ble: 380.0      # hypothèse, ordre de grandeur NON sourcé : à remplacer par une donnée de marché
+  base_regionale_ble_eur_t: 0.0    # hypothèse neutre : écart entre le prix Euronext et le blé acheté localement
+
+# Réseau FICTIF de trois usines, inspiré de cas publics.
+usines:
+  A:
+    nom: "Usine A — bord du Rhin inférieur"
+    consommation_t_jour: 1000      # hypothèse
+    stock_initial_jours: 12        # hypothèse
+    capacite_silo_t: 25000         # hypothèse
+    stock_securite_jours: 3        # hypothèse : en dessous, on réduit la production
+    approvisionnement:
+      peniche: {part: 0.70, station: KAUB, distance_km: 300, fret_base_eur_t: 9.0}
+      rail: {part: 0.25, distance_km: 320, fret_eur_t: 21.0}
+      camion: {part: 0.05, distance_km: 120}
+    inspiration: "usine de Krefeld (Cargill), au bord du Rhin, desservie par le fleuve et le rail"
+  B:
+    nom: "Usine B — Benelux"
+    consommation_t_jour: 700
+    stock_initial_jours: 10
+    capacite_silo_t: 14000
+    stock_securite_jours: 3
+    approvisionnement:
+      peniche: {part: 0.60, station: DUISBURG-RUHRORT, distance_km: 250, fret_base_eur_t: 7.5}
+      rail: {part: 0.0, distance_km: 260, fret_eur_t: 19.0}
+      camion: {part: 0.40, distance_km: 150}
+    inspiration: "sites d'amidonnerie du delta du Rhin et de l'Escaut"
+  C:
+    nom: "Usine C — desservie par le rail et la route"
+    consommation_t_jour: 500
+    stock_initial_jours: 8
+    capacite_silo_t: 8000
+    stock_securite_jours: 2
+    approvisionnement:
+      peniche: {part: 0.0, station: null, distance_km: 0, fret_base_eur_t: 0.0}
+      rail: {part: 0.70, distance_km: 280, fret_eur_t: 19.0}
+      camion: {part: 0.30, distance_km: 90}
+    inspiration: "site intérieur sans accès fluvial"
+
+# Seuils d'alerte de la note du matin.
+alertes:
+  horizon_jours: 42                # six semaines, comme la prévision de l'Institut fédéral d'hydrologie (BfG)
+  rouge_proba_rupture: 0.30        # si la probabilité de rupture sans action dépasse 30 % : rouge
+  orange_proba_rupture: 0.10
+  orange_taux_chargement: 0.50     # orange aussi si le taux de chargement médian passe sous 50 %…
+  orange_jours_consecutifs: 7      # … pendant au moins 7 jours d'affilée dans les 3 semaines

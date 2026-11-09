@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kaub"
+version = "0.1.0"
+description = "KAUB : un agent d'IA qui relie le niveau du Rhin, les prix du blé, du gaz et du carbone à la marge d'un réseau fictif d'usines d'amidon."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Malo Renoux" }]
+dependencies = [
+    "pandas>=2.0",
+    "numpy>=1.24",
+    "requests>=2.31",
+    "pyyaml>=6.0",
+    "pydantic>=2.5",
+    "anthropic>=0.75",
+    "streamlit>=1.35",
+    "plotly>=5.18",
+    "openpyxl>=3.1",
+    "scipy>=1.11",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4"]
+
+[project.scripts]
+kaub = "kaub.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["kaub*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

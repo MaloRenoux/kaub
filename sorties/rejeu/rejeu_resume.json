@@ -1,0 +1,267 @@
+{
+ "resume": {
+  "usine": "A",
+  "station": "KAUB",
+  "periode": "2026-06-01 → 2026-10-31",
+  "seuils": {
+   "orange_cm": 40.0,
+   "rouge_cm": 25.0,
+   "horizon_jours": 21
+  },
+  "premiere_alerte_orange": "2026-06-24",
+  "niveau_premiere_alerte_orange_cm": 73.0,
+  "premiere_alerte_rouge": "2026-06-26",
+  "niveau_premiere_alerte_rouge_cm": 64.0,
+  "premier_passage_sous_40cm": "2026-07-13",
+  "premier_passage_sous_25cm": "2026-08-03",
+  "premier_passage_sous_10cm": "2026-08-14",
+  "avance_orange_sur_40cm_jours": 19,
+  "avance_rouge_sur_25cm_jours": 38,
+  "avance_orange_sur_10cm_jours": 51,
+  "minimum_aout_cm": 6.0,
+  "date_minimum_aout": "2026-08-16",
+  "minimum_ete_cm": -8.0,
+  "date_minimum_ete": "2026-09-30",
+  "recommandation_jour_alerte": "Rail et camions d'appoint",
+  "methode_prevision": "tarissement exponentiel vers le débit de base (scénarios sec 25 %, central 50 %, persistance 25 %), données passées uniquement"
+ },
+ "bilan_reconstitution": {
+  "station": "KAUB",
+  "nb_releves_ancrage": 12,
+  "erreur_avant_ancrage_cm": {
+   "moyenne_absolue": 10.8,
+   "max": 35.9
+  },
+  "erreur_validation_croisee_cm": {
+   "moyenne_absolue": 5.4,
+   "max": 17.3
+  },
+  "detail_validation_croisee": [
+   {
+    "date": "2026-07-24",
+    "releve_cm": 55.0,
+    "reconstitue_sans_ce_releve_cm": 37.7
+   },
+   {
+    "date": "2026-07-29",
+    "releve_cm": 27.0,
+    "reconstitue_sans_ce_releve_cm": 30.8
+   },
+   {
+    "date": "2026-07-31",
+    "releve_cm": 25.0,
+    "reconstitue_sans_ce_releve_cm": 28.2
+   },
+   {
+    "date": "2026-08-01",
+    "releve_cm": 30.0,
+    "reconstitue_sans_ce_releve_cm": 25.6
+   },
+   {
+    "date": "2026-08-04",
+    "releve_cm": 24.0,
+    "reconstitue_sans_ce_releve_cm": 24.7
+   },
+   {
+    "date": "2026-08-10",
+    "releve_cm": 17.0,
+    "reconstitue_sans_ce_releve_cm": 17.4
+   },
+   {
+    "date": "2026-08-14",
+    "releve_cm": 8.0,
+    "reconstitue_sans_ce_releve_cm": 16.7
+   },
+   {
+    "date": "2026-08-31",
+    "releve_cm": 73.0,
+    "reconstitue_sans_ce_releve_cm": 61.4
+   },
+   {
+    "date": "2026-09-02",
+    "releve_cm": 59.0,
+    "reconstitue_sans_ce_releve_cm": 64.2
+   },
+   {
+    "date": "2026-09-19",
+    "releve_cm": 22.0,
+    "reconstitue_sans_ce_releve_cm": 27.7
+   },
+   {
+    "date": "2026-09-27",
+    "releve_cm": -2.0,
+    "reconstitue_sans_ce_releve_cm": 0.8
+   },
+   {
+    "date": "2026-10-01",
+    "releve_cm": -6.0,
+    "reconstitue_sans_ce_releve_cm": -6.9
+   }
+  ],
+  "erreur_glofas_corrige_sur_mesures_officielles_cm": 5.1,
+  "controle_presse_vs_officiel": [
+   {
+    "date": "2026-10-30",
+    "presse_cm": 44.0,
+    "officiel_moyenne_jour_cm": 41.2
+   },
+   {
+    "date": "2026-11-02",
+    "presse_cm": 21.0,
+    "officiel_moyenne_jour_cm": 19.1
+   }
+  ]
+ },
+ "options_ex_ante": [
+  {
+   "option": "Rail et camions d'appoint",
+   "description": "Bascule sur le rail, complétée par des camions tant que le rail n'est pas en place.",
+   "cout_moyen_eur": 1012636.708380689,
+   "cout_p90_eur": 1070687.6412360908,
+   "transport_moyen_eur_t": 25.98425470661734,
+   "proba_rupture": 0.0,
+   "rupture_moyenne_t": 0.0,
+   "stock_min_jours_median": 7.0,
+   "nb_scenarios": 3,
+   "ecart_vs_statu_quo_eur": -549341.2544630851,
+   "sans_effet": false
+  },
+  {
+   "option": "Basculer 30 % des volumes sur le rail",
+   "description": "Transférer 30 % de la consommation de la péniche vers le rail, effectif après 7 jours.",
+   "cout_moyen_eur": 941161.4451194336,
+   "cout_p90_eur": 1034250.7790033713,
+   "transport_moyen_eur_t": 25.094701246045382,
+   "proba_rupture": 0.25,
+   "rupture_moyenne_t": 377.59785553674135,
+   "stock_min_jours_median": 3.595529436330271,
+   "nb_scenarios": 3,
+   "ecart_vs_statu_quo_eur": -620816.5177243405,
+   "sans_effet": false
+  },
+  {
+   "option": "Avancer les péniches et basculer sur le rail",
+   "description": "Combinaison des deux options précédentes.",
+   "cout_moyen_eur": 941468.4850866202,
+   "cout_p90_eur": 1034250.7790033713,
+   "transport_moyen_eur_t": 25.092622950194027,
+   "proba_rupture": 0.25,
+   "rupture_moyenne_t": 377.59785553674135,
+   "stock_min_jours_median": 3.595529436330271,
+   "nb_scenarios": 3,
+   "ecart_vs_statu_quo_eur": -620509.4777571539,
+   "sans_effet": false
+  },
+  {
+   "option": "Camions d'appoint",
+   "description": "Appeler jusqu'à 400 t/jour de camions (33 €/t de fret) dès que le stock passe sous sa cible (délai 2 jours).",
+   "cout_moyen_eur": 992892.6885593369,
+   "cout_p90_eur": 1045618.63994415,
+   "transport_moyen_eur_t": 27.664487275589426,
+   "proba_rupture": 0.25,
+   "rupture_moyenne_t": 107.65978789255666,
+   "stock_min_jours_median": 4.26893832077248,
+   "nb_scenarios": 3,
+   "ecart_vs_statu_quo_eur": -569085.2742844372,
+   "sans_effet": false
+  },
+  {
+   "option": "Ne rien changer",
+   "description": "On garde le plan d'approvisionnement actuel.",
+   "cout_moyen_eur": 1561977.9628437741,
+   "cout_p90_eur": 1898469.8148112793,
+   "transport_moyen_eur_t": 24.173309633068627,
+   "proba_rupture": 1.0,
+   "rupture_moyenne_t": 8665.325638148632,
+   "stock_min_jours_median": 3.0,
+   "nb_scenarios": 3,
+   "ecart_vs_statu_quo_eur": 0.0,
+   "sans_effet": false
+  },
+  {
+   "option": "Avancer des livraisons fluviales",
+   "description": "Affréter des péniches en plus pendant 10 jours (jusqu'à 210 t/jour) tant qu'elles chargent encore.",
+   "cout_moyen_eur": 1561977.9628437741,
+   "cout_p90_eur": 1898469.8148112793,
+   "transport_moyen_eur_t": 24.173309633068627,
+   "proba_rupture": 1.0,
+   "rupture_moyenne_t": 8665.325638148632,
+   "stock_min_jours_median": 3.0,
+   "nb_scenarios": 3,
+   "ecart_vs_statu_quo_eur": 0.0,
+   "sans_effet": true
+  }
+ ],
+ "options_a_posteriori": [
+  {
+   "option": "Ne rien changer",
+   "description": "On garde le plan d'approvisionnement actuel.",
+   "cout_moyen_eur": 1505367.6722930581,
+   "cout_p90_eur": 1505367.6722930581,
+   "transport_moyen_eur_t": 23.919728829200146,
+   "proba_rupture": 1.0,
+   "rupture_moyenne_t": 8083.039024390242,
+   "stock_min_jours_median": 3.0,
+   "nb_scenarios": 1,
+   "ecart_vs_statu_quo_eur": 0.0,
+   "sans_effet": false,
+   "recommandee_par_kaub": false
+  },
+  {
+   "option": "Basculer 30 % des volumes sur le rail",
+   "description": "Transférer 30 % de la consommation de la péniche vers le rail, effectif après 7 jours.",
+   "cout_moyen_eur": 910598.2603088258,
+   "cout_p90_eur": 910598.2603088258,
+   "transport_moyen_eur_t": 24.88201242876918,
+   "proba_rupture": 0.0,
+   "rupture_moyenne_t": 0.0,
+   "stock_min_jours_median": 5.384643902439027,
+   "nb_scenarios": 1,
+   "ecart_vs_statu_quo_eur": -594769.4119842324,
+   "sans_effet": false,
+   "recommandee_par_kaub": false
+  },
+  {
+   "option": "Avancer les péniches et basculer sur le rail",
+   "description": "Combinaison des deux options précédentes.",
+   "cout_moyen_eur": 910979.1049223194,
+   "cout_p90_eur": 910979.1049223194,
+   "transport_moyen_eur_t": 24.87960097333171,
+   "proba_rupture": 0.0,
+   "rupture_moyenne_t": 0.0,
+   "stock_min_jours_median": 5.40146829268293,
+   "nb_scenarios": 1,
+   "ecart_vs_statu_quo_eur": -594388.5673707387,
+   "sans_effet": false,
+   "recommandee_par_kaub": false
+  },
+  {
+   "option": "Camions d'appoint",
+   "description": "Appeler jusqu'à 400 t/jour de camions (33 €/t de fret) dès que le stock passe sous sa cible (délai 2 jours).",
+   "cout_moyen_eur": 1013313.8830247658,
+   "cout_p90_eur": 1013313.8830247658,
+   "transport_moyen_eur_t": 27.581710945306448,
+   "proba_rupture": 0.0,
+   "rupture_moyenne_t": 0.0,
+   "stock_min_jours_median": 5.755917073170731,
+   "nb_scenarios": 1,
+   "ecart_vs_statu_quo_eur": -492053.78926829237,
+   "sans_effet": false,
+   "recommandee_par_kaub": false
+  },
+  {
+   "option": "Rail et camions d'appoint",
+   "description": "Bascule sur le rail, complétée par des camions tant que le rail n'est pas en place.",
+   "cout_moyen_eur": 969363.023793146,
+   "cout_p90_eur": 969363.023793146,
+   "transport_moyen_eur_t": 25.367404564331196,
+   "proba_rupture": 0.0,
+   "rupture_moyenne_t": 0.0,
+   "stock_min_jours_median": 7.0,
+   "nb_scenarios": 1,
+   "ecart_vs_statu_quo_eur": -536004.6484999121,
+   "sans_effet": false,
+   "recommandee_par_kaub": true
+  }
+ ]
+}
