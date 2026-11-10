@@ -4,4 +4,4 @@ carbone_eua,83.415,EUR/t CO2,2026-11-09,"Yahoo Finance, CO2.L (titre adossé à 
 gaz_ttf,82.33,EUR/MWh,2026-11-09,"Yahoo Finance, TTF=F (contrat à terme TTF)",False
 mais_euronext,250.25,EUR/t,2026-11-09,"Euronext, maïs (EMA), dernier cours 10 h 57 (saisie manuelle)",False
 carbone_eua,83.58,EUR/t CO2,2026-11-10,"Yahoo Finance, CO2.L (titre adossé à des quotas EUA)",True
-gaz_ttf,82.24,EUR/MWh,2026-11-10,"Yahoo Finance, TTF=F (contrat à terme TTF)",False
+gaz_ttf,82.745,EUR/MWh,2026-11-10,"Yahoo Finance, TTF=F (contrat à terme TTF)",False
