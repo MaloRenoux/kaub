@@ -4,3 +4,6 @@
 {"horodatage": "2026-11-10T13:48:24", "type": "recommandation", "date": "2026-11-10", "usine": "A", "alerte": "ROUGE", "option": "Basculer 30 % des volumes sur le rail", "proba_rupture_sans_action": 0.98}
 {"horodatage": "2026-11-10T13:48:24", "type": "recommandation", "date": "2026-11-10", "usine": "B", "alerte": "VERT", "option": "Ne rien changer", "proba_rupture_sans_action": 0.0}
 {"horodatage": "2026-11-10T13:48:24", "type": "recommandation", "date": "2026-11-10", "usine": "C", "alerte": "VERT", "option": "Ne rien changer", "proba_rupture_sans_action": 0.0}
+{"horodatage": "2026-11-11T12:59:31", "type": "recommandation", "date": "2026-11-11", "usine": "A", "alerte": "ROUGE", "option": "Basculer 30 % des volumes sur le rail", "proba_rupture_sans_action": 0.96}
+{"horodatage": "2026-11-11T12:59:31", "type": "recommandation", "date": "2026-11-11", "usine": "B", "alerte": "VERT", "option": "Ne rien changer", "proba_rupture_sans_action": 0.0}
+{"horodatage": "2026-11-11T12:59:31", "type": "recommandation", "date": "2026-11-11", "usine": "C", "alerte": "VERT", "option": "Ne rien changer", "proba_rupture_sans_action": 0.0}
