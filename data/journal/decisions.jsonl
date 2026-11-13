@@ -10,3 +10,6 @@
 {"horodatage": "2026-11-12T14:00:29", "type": "recommandation", "date": "2026-11-12", "usine": "A", "alerte": "ROUGE", "option": "Basculer 30 % des volumes sur le rail", "proba_rupture_sans_action": 0.92}
 {"horodatage": "2026-11-12T14:00:29", "type": "recommandation", "date": "2026-11-12", "usine": "B", "alerte": "VERT", "option": "Ne rien changer", "proba_rupture_sans_action": 0.02}
 {"horodatage": "2026-11-12T14:00:29", "type": "recommandation", "date": "2026-11-12", "usine": "C", "alerte": "VERT", "option": "Ne rien changer", "proba_rupture_sans_action": 0.0}
+{"horodatage": "2026-11-13T13:28:26", "type": "recommandation", "date": "2026-11-13", "usine": "A", "alerte": "ROUGE", "option": "Camions d'appoint", "proba_rupture_sans_action": 0.88}
+{"horodatage": "2026-11-13T13:28:26", "type": "recommandation", "date": "2026-11-13", "usine": "B", "alerte": "VERT", "option": "Ne rien changer", "proba_rupture_sans_action": 0.0}
+{"horodatage": "2026-11-13T13:28:26", "type": "recommandation", "date": "2026-11-13", "usine": "C", "alerte": "VERT", "option": "Ne rien changer", "proba_rupture_sans_action": 0.0}
