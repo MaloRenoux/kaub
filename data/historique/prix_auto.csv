@@ -15,5 +15,5 @@ carbone_eua,83.265,EUR/t CO2,2026-11-16,"Yahoo Finance, CO2.L (titre adossé à 
 gaz_ttf,84.045,EUR/MWh,2026-11-16,"Yahoo Finance, TTF=F (contrat à terme TTF)",False
 carbone_eua,83.13,EUR/t CO2,2026-11-17,"Yahoo Finance, CO2.L (titre adossé à des quotas EUA)",True
 gaz_ttf,85.48,EUR/MWh,2026-11-17,"Yahoo Finance, TTF=F (contrat à terme TTF)",False
-carbone_eua,79.0,EUR/t CO2,2026-11-18,"Yahoo Finance, CO2.L (titre adossé à des quotas EUA)",True
-gaz_ttf,82.53,EUR/MWh,2026-11-18,"Yahoo Finance, TTF=F (contrat à terme TTF)",False
+carbone_eua,76.25,EUR/t CO2,2026-11-18,"Yahoo Finance, CO2.L (titre adossé à des quotas EUA)",True
+gaz_ttf,81.105,EUR/MWh,2026-11-18,"Yahoo Finance, TTF=F (contrat à terme TTF)",False
